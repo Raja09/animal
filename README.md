@@ -45,4 +45,4 @@ Ans: We can model caterpillar and butterfly using Composition/Aggregation - ther
 Ans:- Complie and run the following **TestE1.java** file to get the fly, walk, sing and swim animal count.
 
 
-Note:- Run the test cases from test package (Positive and negative test cases are implemented)
+Note:- Run test cases from test package (Positive and negative test cases are implemented)
