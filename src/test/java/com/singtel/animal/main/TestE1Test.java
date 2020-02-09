@@ -1,5 +1,9 @@
 package com.singtel.animal.main;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 import com.singtel.animal.Animal;
 import com.singtel.animal.birds.Butterfly;
 import com.singtel.animal.birds.Chicken;
@@ -10,30 +14,28 @@ import com.singtel.animal.fish.Clownfish;
 import com.singtel.animal.fish.Dolphin;
 import com.singtel.animal.fish.Shark;
 
-public class TestE1 {
+public class TestE1Test {
 
-	public static void main(String[] args) {
-
+	@Test
+	public void testE1() {
+		
 		int flyCount = 0;
 		int swimCount = 0;
 		int walkCount = 0;
 		int singCount = 0;
 
 		Animal[] animals = new Animal[] { 
-				new Duck(), 
-				new Chicken(), 
-				new Rooster(), 
-				new Parrot(), 
-				new Shark(),
-				new Clownfish(), 
-				new Dolphin(),
-				// new Frog(),
-				// new Dog(),
-				new Butterfly(),
-				// new Cat()
-		};
+									new Duck(), 
+									new Chicken(), 
+									new Rooster(), 
+									new Parrot(), 
+									new Shark(),
+									new Clownfish(), 
+									new Dolphin(),
+									new Butterfly(),
+							};
+		
 		for (int i = 0; i < animals.length; i++) {
-//			System.out.println("Animal name:" + animals[i]);
 			if (animals[i].isFly()) {
 				flyCount = flyCount + 1;
 			}
@@ -47,11 +49,18 @@ public class TestE1 {
 				swimCount = swimCount + 1;
 			}
 		}
-		System.out.println("Fly Animals count:" + flyCount);
-		System.out.println("Sing Animals count:" + singCount);
-		System.out.println("Walk Animals count:" + walkCount);
-		System.out.println("Swim Animals count:" + swimCount);
-
+		
+		// Positive test cases
+		assertEquals(2, flyCount);
+		assertEquals(4, swimCount);
+		assertEquals(2, walkCount);
+		assertEquals(1, singCount);
+		
+		// Negative test cases
+		assertEquals(3, flyCount);
+		assertEquals(3, swimCount);
+		assertEquals(3, walkCount);
+		assertEquals(2, singCount);
 	}
 
 }
