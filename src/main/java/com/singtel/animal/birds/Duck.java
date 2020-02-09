@@ -1,6 +1,5 @@
 package com.singtel.animal.birds;
 
-import com.singtel.animal.Animal;
 import com.singtel.animal.Bird;
 import com.singtel.animal.behaviour.SoundBehaviour;
 import com.singtel.animal.behaviour.SwimBehaviour;
