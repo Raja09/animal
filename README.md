@@ -23,21 +23,21 @@ lived in a house with dogs one in a house with cats, the other lived on a farm n
 the rooster.
 Ans:- We can keep parrtot maintainable using Composition (Has-A relationship) with abstraction(implementing interfaces). Here the parrot has a relationship with cat, dog, duck, rooster and phone.
 
-###B: Model fish as well as other swimming animals
-####1. In addition to the birds, can you model a fish?
+##B: Model fish as well as other swimming animals
+######1. In addition to the birds, can you model a fish?
 Ans:- Execute following **TestB1.java** file
 
-####2. Can you specialize the fish as a Shark and as a Clownfish?
+######2. Can you specialize the fish as a Shark and as a Clownfish?
 Ans:- Execute following **TestB2.java** file
 
-####3. Dolphins are not exactly fish, yet, they are good swimmers
+######3. Dolphins are not exactly fish, yet, they are good swimmers
 Ans:- Execute following **TestB3.java** file
 
 ##D. Model animals that change their behaviour over time
-#####1. Can you model a butterfly?
+######1. Can you model a butterfly?
 Ans:- Execute the following **TestD2.java** to get the desired result
 
-#####2. Can you optimize your model to account for the metamorphosis from caterpillar to
+######2. Can you optimize your model to account for the metamorphosis from caterpillar to
 butterfly?
 Ans: We can model caterpillar and butterfly using Composition/Aggregation - there is a relationship between caterpillar and butterfly since Caterpillar is transforming to butterfly and execute the following **TestD2.java** to get the desired result
 
